@@ -1,0 +1,135 @@
+body {
+  background-color: #f6f1eb;
+  color: #2b1f16;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #f6f1eb;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: #2b1f16;
+  letter-spacing: 4px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  color: #b08a5a;
+}
+
+.checkout-section h2 {
+  color: #2b1f16;
+  font-weight: 600;
+}
+
+.cart-summary {
+  background-color: #ffffff;
+  border: 1px solid #b08a5a;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.cart-summary h4 {
+  color: #2b1f16;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.cart-item p,
+.cart-item small {
+  margin: 0;
+  color: #5a4a3d;
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: #2b1f16;
+}
+
+.checkout-card {
+  background-color: #ffffff;
+  border: 1px solid #b08a5a;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-card label {
+  color: #2b1f16;
+}
+
+.checkout-card input,
+.checkout-card textarea {
+  width: 100%;
+  background-color: #f6f1eb;
+  border: 1px solid #b08a5a;
+  color: #2b1f16;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-card input:focus,
+.checkout-card textarea:focus {
+  border-color: #9a754a;
+  box-shadow: 0 0 10px rgba(176, 138, 90, 0.3);
+  outline: none;
+}
+
+.btn-premium {
+  background-color: #b08a5a;
+  color: #ffffff;
+  border: 1px solid #b08a5a;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+  background-color: #9a754a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-premium:active,
+.btn-premium:focus {
+  background-color: #9a754a;
+  color: #0b0c10;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+.secure-text {
+  text-align: center;
+  margin-top: 1rem;
+  color: #5a4a3d;
+}
+
+.secure-text .bi-shield-lock-fill {
+  color: #b08a5a;
+  margin-right: 0.3rem;
+}
+
+@media (max-width: 991px) {
+  .cart-summary,
+  .checkout-card {
+    margin-bottom: 2rem;
+  }
+}
